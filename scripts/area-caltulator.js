@@ -49,11 +49,20 @@ function calculateparalalogramArea() {
       const area = base * height;
       setElementInnerText("paralalogram-area", area);
 
-
-
-
-
 }
+
+function calculateEllipseArea() {
+      const majorRadius = getInputValue("ellipse-major-radius");
+      const minorRadius = getInputValue("ellipse-minor-radius");
+      const area = 3.14 * majorRadius * minorRadius;
+      setElementInnerText("ellipse-area", area);
+}
+
+
+
+
+
+
 // reusable get input value field in number
 
 function getInputValue(fieldId) {
